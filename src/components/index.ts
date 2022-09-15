@@ -6,3 +6,4 @@ export { default as Branding } from "./Branding";
 export { default as Text } from "./Text";
 export { default as Title } from "./Title";
 export { default as Header } from "./Header";
+export { default as SectionHeading } from "./SectionHeading";

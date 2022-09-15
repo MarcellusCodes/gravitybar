@@ -31,8 +31,8 @@ const headerItemMotion = {
 
 const Header: React.FC = () => {
   return (
-    <header className="pt-24 sm:pt-44">
-      <div className="flex flex-col space-y-16 xl:space-y-0 xl:flex-row justify-between">
+    <header className="pt-28 sm:pt-52">
+      <div className="flex flex-col space-y-8 xl:space-y-0 xl:flex-row justify-between">
         <motion.h1
           initial="initial"
           animate="animate"
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
           </Text>
         </motion.div>
       </div>
-      <div className="my-16" />
+      <div className="mt-16" />
       <video playsInline autoPlay muted loop className="w-full aspect-video">
         <source src="/intro.mp4" />
       </video>
