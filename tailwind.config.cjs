@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionTimingFunction: {
+        easing: "cubic-bezier(0.77, 0, 0.18, 1)",
+      },
       colors: {
         primary: {
           50: "#ffffff",
@@ -27,6 +30,7 @@ module.exports = {
           700: "#3d4248",
           800: "#34363b",
           900: "#26282b",
+          1000: "#1c1e21",
         },
         tertiary: {
           50: "#f4f6f7",

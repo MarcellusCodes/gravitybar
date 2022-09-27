@@ -34,7 +34,7 @@ const SectionHeadingTransition = {
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({ caption, title }) => {
   return (
-    <div className="flex flex-col-reverse xl:flex-row justify-between mt-28 sm:mt-52">
+    <div className="flex flex-col-reverse xl:flex-row justify-between mt-28 sm:mt-52 mb-16">
       <motion.div
         custom={12}
         variants={SectionHeadingMotion}
@@ -42,7 +42,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ caption, title }) => {
         whileInView={["animate", "leftOrigin"]}
         viewport={{ once: true, margin: "0px 0px -350px 0px" }}
         transition={SectionHeadingTransition}
-        className="text-left max-w-xl self-end mt-8 sm:mt-0"
+        className="text-left max-w-xl self-end mt-8 xl:mt-0"
       >
         <Text>{caption}</Text>
       </motion.div>

@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { trpc } from "../utils/trpc";
-import { Layout, Text, Header, SectionHeading } from "../components/index";
-import { motion } from "framer-motion";
-import { Easing } from "../constants/index";
+import {
+  Layout,
+  Header,
+  SectionHeading,
+  Products,
+} from "../components/index";
+
 
 const Home: NextPage = () => {
   //const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
@@ -18,10 +22,52 @@ const Home: NextPage = () => {
       <Layout>
         <Header />
         <main className="pb-44">
-          <SectionHeading
-            caption="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, earum aut iste, excepturi sit neque, nemo fugiat dolorum hic nesciunt magnam. Pariatur repellendus sint accusantium nemo voluptas et aperiam autem."
-            title="Our Products"
-          />
+          <section>
+            <SectionHeading
+              caption="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, earum aut iste, excepturi sit neque, nemo fugiat dolorum hic nesciunt magnam. Pariatur repellendus sint accusantium nemo voluptas et aperiam autem."
+              title="newest Products"
+            />
+            <Products
+              products={[
+                {
+                  title: "Salmon",
+                  caption:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                  tags: [{ id: "1", title: "Fish" }],
+                },
+                {
+                  title: "Salmon",
+                  caption:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                  tags: [{ id: "1", title: "Fish" }],
+                },
+                {
+                  title: "Salmon",
+                  caption:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                  tags: [{ id: "1", title: "Fish" }],
+                },
+                {
+                  title: "Salmon",
+                  caption:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                  tags: [{ id: "1", title: "Fish" }],
+                },
+                {
+                  title: "Salmon",
+                  caption:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                  tags: [{ id: "1", title: "Fish" }],
+                },
+                {
+                  title: "Salmon",
+                  caption:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                  tags: [{ id: "1", title: "Fish" }],
+                },
+              ]}
+            />
+          </section>
         </main>
       </Layout>
     </>

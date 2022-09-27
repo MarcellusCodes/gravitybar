@@ -7,3 +7,5 @@ export { default as Text } from "./Text";
 export { default as Title } from "./Title";
 export { default as Header } from "./Header";
 export { default as SectionHeading } from "./SectionHeading";
+export { default as Product } from "./Product";
+export { default as Products } from "./Products";
