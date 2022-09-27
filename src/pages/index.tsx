@@ -6,8 +6,8 @@ import {
   Header,
   SectionHeading,
   Products,
+  CtaSectionBtn,
 } from "../components/index";
-
 
 const Home: NextPage = () => {
   //const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
@@ -67,6 +67,7 @@ const Home: NextPage = () => {
                 },
               ]}
             />
+            <CtaSectionBtn title="More Products" link="/products" />
           </section>
         </main>
       </Layout>
