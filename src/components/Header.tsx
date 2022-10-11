@@ -1,7 +1,14 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import { Easing } from "../constants/index";
 import { Text } from "./index";
+import {
+  useScroll,
+  motion,
+  useTransform,
+  useMotionValue,
+  useSpring,
+} from "framer-motion";
 
 const headingContainerMotion = {
   animate: {
@@ -30,6 +37,16 @@ const headerItemMotion = {
 };
 
 const Header: React.FC = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [-200, 500, 700], [100, -200, 0]);
+  const scale = useSpring(
+    useTransform(scrollY, [-200, 500, 700, 900, 1100], [1, 1.2, 2, 1.2, 1]),
+    {
+      stiffness: 400,
+      damping: 90,
+    }
+  );
+
   return (
     <header className="pt-28 sm:pt-52">
       <div className="flex flex-col space-y-8 xl:space-y-0 xl:flex-row justify-between">
@@ -69,9 +86,17 @@ const Header: React.FC = () => {
         </motion.div>
       </div>
       <div className="mt-16" />
-      <video playsInline autoPlay muted loop className="w-full aspect-video">
+      <motion.video
+        transition={{ ...Easing }}
+        style={{ y: y, scale: scale }}
+        playsInline
+        autoPlay
+        muted
+        loop
+        className="w-full aspect-video"
+      >
         <source src="/intro.mp4" />
-      </video>
+      </motion.video>
     </header>
   );
 };

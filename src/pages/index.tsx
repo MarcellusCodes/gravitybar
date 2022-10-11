@@ -8,6 +8,7 @@ import {
   Products,
   CtaSectionBtn,
 } from "../components/index";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Home: NextPage = () => {
   //const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
@@ -68,6 +69,12 @@ const Home: NextPage = () => {
               ]}
             />
             <CtaSectionBtn title="More Products" link="/products" />
+          </section>
+          <section className="relative">
+            <SectionHeading
+              caption="Lorem Ipsum dolor sit amet consecttu eut ejheut e shehtufjhe djfdtehe."
+              title="The Ambience"
+            />
           </section>
         </main>
       </Layout>
