@@ -16,6 +16,7 @@
     "@trpc/next": "^9.27.2",
     "@trpc/react": "^9.27.2",
     "@trpc/server": "^9.27.2",
+    "framed-scroll-motion": "^0.0.1",
     "framer-motion": "^7.3.2",
     "next": "12.2.5",
     "next-auth": "^4.10.3",

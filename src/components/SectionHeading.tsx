@@ -34,7 +34,7 @@ const SectionHeadingTransition = {
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({ caption, title }) => {
   return (
-    <div className="flex flex-col-reverse xl:flex-row justify-between mt-28 sm:mt-52 mb-16">
+    <div className="flex flex-col-reverse xl:flex-row justify-between mt-28 sm:mt-52 mb-44">
       <motion.div
         custom={12}
         variants={SectionHeadingMotion}
