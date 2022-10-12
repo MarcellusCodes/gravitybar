@@ -14,12 +14,12 @@ export interface ProductProps {
 const productMotion = {
   initial: {
     opacity: 0,
-    
+
     rotate: -12,
   },
   animate: {
     transformOrigin: "right",
-    
+
     opacity: 1,
     rotate: 0,
     transition: {

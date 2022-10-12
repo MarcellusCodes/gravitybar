@@ -4,7 +4,7 @@ import { Product } from "./index";
 import { motion } from "framer-motion";
 
 interface ProductsProps {
-  products: ProductProps[];
+  products?: ProductProps[];
 }
 
 const productsMotion = {
