@@ -3,10 +3,7 @@ import React from "react";
 import { Easing } from "../constants/index";
 import { Text } from "./index";
 import {
-  useScroll,
   motion,
-  useTransform,
-  useMotionValue,
   useSpring,
 } from "framer-motion";
 import {

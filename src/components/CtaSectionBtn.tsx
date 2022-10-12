@@ -1,17 +1,11 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { Easing } from "../constants/index";
 
 interface CtaSectionBtnProps {
   title: string;
   link: string;
 }
-
-const pathMotion = {
-  initial: { pathLength: 0 },
-  animate: { pathLength: 1 },
-};
 
 const CtaSectionBtn: React.FC<CtaSectionBtnProps> = ({ title, link }) => {
   return (
