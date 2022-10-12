@@ -4,11 +4,11 @@ import React from "react";
 import { Easing } from "../constants/index";
 
 export interface ProductProps {
-  id: string;
+  id?: string;
   title: string;
   caption: string;
   tags: { id: string; title: string }[];
-  images: { id: string; src: string }[];
+  images?: { id: string; src: string }[];
 }
 
 const productMotion = {
@@ -29,7 +29,7 @@ const productMotion = {
   },
 };
 
-const Product: React.FC<ProductProps> = ({ title, caption, tags, images }) => {
+const Product: React.FC<ProductProps> = ({ title, caption, tags }) => {
   return (
     <motion.article
       variants={productMotion}

@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useRef } from "react";
-import { trpc } from "../utils/trpc";
+
 import {
   Layout,
   Header,
@@ -10,29 +9,12 @@ import {
   CtaSectionBtn,
   Ambience,
 } from "../components/index";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { Easing } from "../constants/index";
-import {
-  FrameProvider,
-  useRefViewportScroll,
-  useViewportTransform,
-} from "framed-scroll-motion";
-import Image from "next/image";
+
+import { FrameProvider } from "framed-scroll-motion";
 
 const Home: NextPage = () => {
   //const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
 
-  const third = useRefViewportScroll([0, 0.5, 1]);
-  const [ref, inputRange] = useRefViewportScroll([0, 0.5, 1]);
-  const scale = useSpring(useViewportTransform(inputRange, [0, 1, 1]), {
-    stiffness: 400,
-    damping: 90,
-  });
-
-  const scale2 = useSpring(useViewportTransform(third[1], [0, 1, 0]), {
-    stiffness: 400,
-    damping: 90,
-  });
   return (
     <>
       <Head>

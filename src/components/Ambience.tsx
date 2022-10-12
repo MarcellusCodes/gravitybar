@@ -1,4 +1,4 @@
-import { motion, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { Easing } from "../constants/index";
