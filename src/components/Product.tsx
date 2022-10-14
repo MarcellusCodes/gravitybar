@@ -76,7 +76,7 @@ const Product: React.FC<ProductProps> = ({ title, caption, tags, images }) => {
               <ul className="flex flex-row items-center space-x-2">
                 {tags.map((tag, index) => (
                   <li key={index}>
-                    <Tag title={tag.title} slug={tag.title}  />
+                    <Tag title={tag.title} slug={tag.title} />
                   </li>
                 ))}
               </ul>
@@ -104,6 +104,7 @@ const Product: React.FC<ProductProps> = ({ title, caption, tags, images }) => {
               px-3
               py-3
               inline-block"
+                  aria-label="More Info"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

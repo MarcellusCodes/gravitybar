@@ -119,7 +119,11 @@ const ProductModal: React.FC<ProductModalProps> = ({
           transition={{ ...Easing, duration: 0.6, delay: 0.1 }}
           className="bg-primary-900 fixed top-0 left-0 w-full h-screen z-10 px-10 py-10 flex flex-col items-center  md:justify-center mx-auto overflow-y-scroll md:overflow-hidden"
         >
-          <button onClick={toggleProduct} className="absolute top-6 right-6">
+          <button
+            onClick={toggleProduct}
+            className="absolute top-6 right-6"
+            aria-label="Close Modal"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 511.991 511.991"

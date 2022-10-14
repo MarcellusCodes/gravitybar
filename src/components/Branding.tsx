@@ -3,9 +3,11 @@ import React from "react";
 
 const Branding: React.FC = () => {
   return (
-    <Link href="/" passHref>
+    <Link href="/">
       <div className="flex flex-row cursor-pointer justify-self-start md:justify-self-center z-10">
-        <a className="text-3xl font-bold text-secondary-900">GravityBar</a>
+        <span className="text-3xl font-bold text-secondary-900">
+          GravityBar
+        </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
