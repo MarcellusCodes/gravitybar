@@ -32,6 +32,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = () => {
         <ul className="justify-self-end z-10">
           <li>
             <motion.button
+              aria-label="handle navigation"
               onClick={handleNavigation}
               className="p-3 border-2 border-secondary-900 rounded-full hover:bg-tertiary-900 transition-colors duration-300 group bg-opacity-25"
             >
