@@ -11,3 +11,6 @@ export { default as Product } from "./Product";
 export { default as Products } from "./Products";
 export { default as CtaSectionBtn } from "./CtaSectionBtn";
 export { default as Ambience } from "./Ambience";
+export { default as Carousel } from "./Carousel";
+export { default as ProductModal } from "./ProductModal";
+export { default as Tag } from "./Tag";

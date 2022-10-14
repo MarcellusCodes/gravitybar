@@ -2,10 +2,7 @@ import React from "react";
 
 import { Easing } from "../constants/index";
 import { Text } from "./index";
-import {
-  motion,
-  useSpring,
-} from "framer-motion";
+import { motion, useSpring } from "framer-motion";
 import {
   useRefViewportScroll,
   useViewportTransform,
@@ -91,7 +88,7 @@ const Header: React.FC = () => {
         autoPlay
         muted
         loop
-        className="w-full aspect-video"
+        className="w-full aspect-video rounded-md"
       >
         <source src="/intro.mp4" />
       </motion.video>

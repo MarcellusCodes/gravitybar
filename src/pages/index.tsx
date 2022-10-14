@@ -38,36 +38,64 @@ const Home: NextPage = () => {
                     caption:
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
                     tags: [{ id: "1", title: "Fish" }],
+                    images: [{ id: "1", src: "/salmon.jpg" }],
+                    type: "card",
                   },
                   {
                     title: "Salmon",
                     caption:
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
                     tags: [{ id: "1", title: "Fish" }],
+                    type: "image",
                   },
                   {
                     title: "Salmon",
                     caption:
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
                     tags: [{ id: "1", title: "Fish" }],
+                    type: "card",
                   },
                   {
                     title: "Salmon",
                     caption:
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
                     tags: [{ id: "1", title: "Fish" }],
+                    type: "image",
                   },
                   {
                     title: "Salmon",
                     caption:
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
                     tags: [{ id: "1", title: "Fish" }],
+                    type: "card",
                   },
                   {
                     title: "Salmon",
                     caption:
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
                     tags: [{ id: "1", title: "Fish" }],
+                    type: "image",
+                  },
+                  {
+                    title: "Salmon",
+                    caption:
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                    tags: [{ id: "1", title: "Fish" }],
+                    type: "card",
+                  },
+                  {
+                    title: "Salmon",
+                    caption:
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                    tags: [{ id: "1", title: "Fish" }],
+                    type: "image",
+                  },
+                  {
+                    title: "Salmon",
+                    caption:
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ipsa temporibus quaerat sapiente placeat id. Quasi blanditiis quas delectus.",
+                    tags: [{ id: "1", title: "Fish" }],
+                    type: "card",
                   },
                 ]}
               />
