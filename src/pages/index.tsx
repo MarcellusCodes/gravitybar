@@ -10,7 +10,6 @@ import {
   Ambience,
   EventType,
 } from "../components/index";
-import { Easing } from "../constants/index";
 
 import { FrameProvider } from "framed-scroll-motion";
 
