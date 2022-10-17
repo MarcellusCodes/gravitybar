@@ -14,3 +14,4 @@ export { default as Ambience } from "./Ambience";
 export { default as Carousel } from "./Carousel";
 export { default as ProductModal } from "./ProductModal";
 export { default as Tag } from "./Tag";
+export { default as EventType } from "./EventType";

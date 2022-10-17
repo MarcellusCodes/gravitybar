@@ -8,7 +8,9 @@ import {
   Products,
   CtaSectionBtn,
   Ambience,
+  EventType,
 } from "../components/index";
+import { Easing } from "../constants/index";
 
 import { FrameProvider } from "framed-scroll-motion";
 
@@ -117,9 +119,16 @@ const Home: NextPage = () => {
                 />
                 <Ambience
                   imgSrc="/ambience-3.jpg"
-                  className="sm:col-start-1 sm:col-end-6 md:col-start-3 md:col-end-8 md:my-16"
+                  className="sm:col-start-1 sm:col-end-6 md:col-start-2 md:col-end-7 md:my-32"
+                />
+                <Ambience
+                  imgSrc="/ambience-3.jpg"
+                  className="sm:col-start-1 sm:col-end-6 md:col-start-8 md:col-end-12 md:my-16"
                 />
               </div>
+              <div className="mt-24" />
+              <EventType />
+              <CtaSectionBtn title="Reservate" link="/reservate" />
             </section>
           </main>
         </Layout>
