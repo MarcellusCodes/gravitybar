@@ -9,9 +9,12 @@ import {
   CtaSectionBtn,
   Ambience,
   EventType,
+  Carousel,
 } from "../components/index";
+import Image from "next/image";
 
 import { FrameProvider } from "framed-scroll-motion";
+import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   //const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
@@ -128,6 +131,168 @@ const Home: NextPage = () => {
               <div className="mt-24" />
               <EventType />
               <CtaSectionBtn title="Reservate" link="/reservate" />
+            </section>
+            <section>
+              <SectionHeading
+                caption="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sint accusantium dolorem possimus, distinctio asperiores eligendi ab dolore impedit suscipit explicabo, et culpa officia obcaecati alias dolorum ut fugit voluptas quidem iusto tempora odit, aut eveniet! Molestiae consequuntur eveniet facere nam quibusdam animi adipisci nemo vitae provident porro! Atque!"
+                title="About Us"
+              />
+              <div className="mt-24" />
+              <h3 className="font-primary text-secondary-900 text-5xl text-center">
+                Our Team
+              </h3>
+              <div className="mt-12" />
+              <Carousel>
+                <motion.div className="flex flex-row items-start">
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px] relative overflow-hidden">
+                      <Image
+                        src="/profile.png"
+                        objectFit="cover"
+                        layout="fill"
+                        alt="Profile"
+                      />
+                    </div>
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-start border-l border-secondary-900 p-6 space-y-6">
+                    <span className="border border-secondary-900 text-secondary-900 px-4 py-2">
+                      Cook
+                    </span>
+                    <div className="border border-secondary-900 rounded-md w-[200px] h-[200px]" />
+                    <h4 className="font-primary text-3xl text-secondary-900">
+                      Johnson Leyla
+                    </h4>
+                    <ul className="flex flex-row items-center">
+                      <li className=""></li>
+                      <li className=""></li>
+                      <li className=""></li>
+                    </ul>
+                  </div>
+                </motion.div>
+              </Carousel>
             </section>
           </main>
         </Layout>

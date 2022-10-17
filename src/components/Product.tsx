@@ -70,9 +70,10 @@ const Product: React.FC<ProductProps> = ({ title, caption, tags, images }) => {
               <h3 className="font-primary text-4xl text-secondary-900">
                 {title}
               </h3>
-              <p className="font-secondary text-[1.1rem] text-secondary-900 text-opacity-85 max-w-2xl">
+              <p className="font-secondary text-[1.1rem] text-secondary-900 text-opacity-85 max-w-2xl pb-1">
                 {caption}
               </p>
+
               <ul className="flex flex-row items-center space-x-2">
                 {tags.map((tag, index) => (
                   <li key={index}>
